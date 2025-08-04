@@ -11,10 +11,10 @@ import re
 import requests
 
 
-TOKEN = "MTQwMTUwNTE3MDA5Mjg1NTMyNg.GQIhy6.AHBCHFSSDJlk9rDpBlN8Qt04SioJr0zY3spgog"
+TOKEN = os.environ["TOKEN"]
 CANALRAID = 1313162554889076906     
 
-WEBHOOK = "https://discord.com/api/webhooks/1401955007569592360/xT31w-AaeZdIzgrBkMyhzXsEkT0hdGkVE52Tsc8gaS55936yuHf4DFmcaE3P7vQtiyXQ"
+WEBHOOK = os.environ["WEBHOOK"]
 ROLAVISO = 1401954486972579952   
 
 invite_regex = re.compile(r"(discord\.gg/|discord\.com/invite/)\S+", re.IGNORECASE)
